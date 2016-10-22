@@ -1,25 +1,29 @@
-
 @ruri: #0F2540;
-@sky:#51A8DD;
+@sky: #005CAF;
+@Ginsyu:#C73E3A;
+@riru:#0F2540;
 //Color
 
 @pageWidth:210mm;
-@pageHeight:297mm;
+@pageHeight:296.5mm;
 //A4
 
-@leftPartWidth:(@pageWidth*0.375);
-@rightPartWidth:(@pageWidth*0.625);
+@leftPartWidth:78.75mm;
+@rightPartWidth:@pageWidth - @leftPartWidth;
 //width,sum = left + right = 1
 
-@leftFirstHeight:(@pageHeight*0.25);
-@leftSecondHeight:(@pageHeight*0.31-6mm);
-@leftThirdHeight:(@pageHeight*0.44-12mm);
+@leftFirstHeight:74.25mm;
+@leftSecondHeight:89.1mm;
+@leftThirdHeight:@pageHeight - @leftFirstHeight - @leftSecondHeight;
 
-@rightFirstWidth:@pageHeight*0.36-20mm;
-@rightSecondWidth:@pageHeight*0.64-20mm;
+@rightFirstHeight:106.92mm;
+@rightSecondHeight: @pageHeight - @rightFirstHeight;
 
 @circleRadius:4.5mm;
 
+@tagsHeight:7mm;
+@tagColor:#ffffff;
+@programHeight:9mm;
 
 @font-face {
   font-family: "PingFang";
@@ -44,12 +48,31 @@
 .cf { zoom:1; }
 //clearfix end
 
+i{
+  font-weight: normal!important;
+}
+
+.theHead{
+  font-size: 5mm;
+  color:@ruri;
+  font-weight: 700;
+  span{
+    font-weight: 700;
+  }
+  height: @programHeight;
+  line-height: @programHeight;
+}
+
 
 html,body{
   width: @pageWidth;
   height: @pageHeight;
   position: relative;
   font-family: "PingFang";
+}
+
+section>div{
+  box-sizing: border-box;
 }
 
 .en{
@@ -76,7 +99,8 @@ header {
     margin-left: 3mm;
     width: @spanWidth;
     font-size: 6mm;
-    font-weight: bold;
+    font-weight: 900;
+    color: @ruri;
   }
 }
 .circle-2{
@@ -106,6 +130,11 @@ header {
 #leftpart{
   .part(left,@leftPartWidth);
   background-color: @sky;
+  font-weight: 600;
+  header{
+    span{color: #ffffff;}
+  }
+
   #image{
     height: @leftFirstHeight;
     background-color: @ruri;
@@ -155,6 +184,7 @@ header {
           width: @spanWidth ;
           margin-left: 3mm;
           text-align: center;
+          color: #ffffff;
         }
       }
     }
@@ -168,6 +198,7 @@ header {
         margin-top: 5mm;
         line-height: 9mm;
         span{
+          color: #ffffff;
           font-size: 4mm;
           float: left;
           width: @spanWidth ;
@@ -176,19 +207,19 @@ header {
         }
 
         &:first-child .progress-room div{
-          width: 45mm;
+          width: 70%;
         }
         &:nth-child(2) .progress-room div{
-          width: 40mm;
+          width: 60%;
         }
         &:nth-child(3) .progress-room div{
-          width: 40mm;
+          width: 60%;
         }
         &:nth-child(4) .progress-room div{
-          width: 30mm;
+          width: 50%;
         }
         &:nth-child(5) .progress-room div{
-          width: 30mm;
+          width: 40%;
         }
       }
       .progress-room{
@@ -214,51 +245,81 @@ header {
     }
   }
 }
+
+
+
 #rightpart{
   .part(right,@rightPartWidth);
   #intro{
     padding: 10mm 10%;
-    text-align: center;
-    height: @rightFirstWidth;
+    height: @rightFirstHeight;
     header{
       span{
         width: @spanWidth2
       }
     }
-    p{
-      height: 8mm;
-      line-height: 8mm;
-      margin-top: 2mm;
+    .content{
+      margin-top: 3mm;
+      font-size: 0.9em;
+      line-height: 6mm;
+      h1{
+        .theHead;
+      }
+      span{
+        .en;
+      }
+      li{
+        list-style: disc;
+        list-style-position: inside;
+      }
     }
   }
   #experience{
+    position: relative;
     padding: 10mm 10%;
-    height: @rightSecondWidth;
+    height: @rightSecondHeight;
     header{
       span{
         width: @spanWidth2;
       }
-
     }
     ul{
-      li{
-        float: left;
-        margin-top: 8mm;
-        width: 50% - 4mm;
-        img{
-          width: 100%;
-        }
-        div{
-          height: 12mm;
-          line-height: 12mm;
-          font-weight:bold;
-        }
+      .code{
+        position: absolute;
+        font-weight: 600;
+        text-align: center;
+        bottom: 6mm;
+        position: absolute;
+        opacity: 0.6;
+        color: @ruri;
+        font-size: 0.9em;
+        left: 22mm;
+        width: 93mm;
+        line-height: 6mm;
+      }
+      span{
+        .en;
+      }
 
-        &:nth-child(2n+1){
-          margin-right: 4mm;
+      li{
+        margin-top: 3mm;
+        width: 100%;
+        h1{
+          .theHead;
         }
-        &:nth-child(2n){
-          margin-left: 4mm;
+        .tags{
+          span{
+            color: @tagColor;
+            background-color: @sky;
+            display: inline-block;
+            padding: 0mm 2mm;
+            font-size: 4mm;
+            font-weight: 700;
+            height: @tagsHeight;
+            line-height: @tagsHeight;
+            border-radius: @tagsHeight/4;
+            margin: 0 0 1.5mm 0;
+          }
         }
       }
     }

@@ -18,12 +18,28 @@
 .cf {
   zoom: 1;
 }
+i {
+  font-weight: normal!important;
+}
+.theHead {
+  font-size: 5mm;
+  color: #0F2540;
+  font-weight: 700;
+  height: 9mm;
+  line-height: 9mm;
+}
+.theHead span {
+  font-weight: 700;
+}
 html,
 body {
   width: 210mm;
-  height: 297mm;
+  height: 296.5mm;
   position: relative;
   font-family: "PingFang";
+}
+section > div {
+  box-sizing: border-box;
 }
 .en {
   font-family: DINPro;
@@ -49,14 +65,15 @@ header span {
   margin-left: 3mm;
   width: 51mm;
   font-size: 6mm;
-  font-weight: bold;
+  font-weight: 900;
+  color: #0F2540;
 }
 .circle-2 {
   height: 9mm;
   width: 9mm;
   border-radius: 4.5mm;
   background-color: #ffffff;
-  color: #51A8DD;
+  color: #005CAF;
   line-height: 9mm;
   font-size: 4mm;
   text-align: center;
@@ -67,7 +84,7 @@ header span {
   width: 9mm;
   border-radius: 4.5mm;
   background-color: #ffffff;
-  color: #51A8DD;
+  color: #005CAF;
   line-height: 9mm;
   font-size: 4mm;
   text-align: center;
@@ -77,7 +94,11 @@ header span {
   float: left;
   width: 78.75mm;
   height: 100%;
-  background-color: #51A8DD;
+  background-color: #005CAF;
+  font-weight: 600;
+}
+#leftpart header span {
+  color: #ffffff;
 }
 #leftpart #image {
   height: 74.25mm;
@@ -115,8 +136,8 @@ header span {
 }
 #leftpart #contact {
   padding: 6mm 10% 0 10%;
-  height: 86.07mm;
-  background-color: #51A8DD;
+  height: 89.1mm;
+  background-color: #005CAF;
 }
 #leftpart #contact ul li {
   margin-top: 5mm;
@@ -128,17 +149,19 @@ header span {
   width: 51mm;
   margin-left: 3mm;
   text-align: center;
+  color: #ffffff;
 }
 #leftpart #skills {
   padding: 6mm 10%;
-  height: 118.68mm;
-  background-color: #51A8DD;
+  height: 133.15mm;
+  background-color: #005CAF;
 }
 #leftpart #skills ul li {
   margin-top: 5mm;
   line-height: 9mm;
 }
 #leftpart #skills ul li span {
+  color: #ffffff;
   font-size: 4mm;
   float: left;
   width: 51mm;
@@ -146,19 +169,19 @@ header span {
   text-align: center;
 }
 #leftpart #skills ul li:first-child .progress-room div {
-  width: 45mm;
+  width: 70%;
 }
 #leftpart #skills ul li:nth-child(2) .progress-room div {
-  width: 40mm;
+  width: 60%;
 }
 #leftpart #skills ul li:nth-child(3) .progress-room div {
-  width: 40mm;
+  width: 60%;
 }
 #leftpart #skills ul li:nth-child(4) .progress-room div {
-  width: 30mm;
+  width: 50%;
 }
 #leftpart #skills ul li:nth-child(5) .progress-room div {
-  width: 30mm;
+  width: 40%;
 }
 #leftpart #skills ul .progress-room {
   width: 51mm;
@@ -186,40 +209,79 @@ header span {
 }
 #rightpart #intro {
   padding: 10mm 10%;
-  text-align: center;
-  height: 86.92mm;
+  height: 106.92mm;
 }
 #rightpart #intro header span {
   width: 93mm;
 }
-#rightpart #intro p {
-  height: 8mm;
-  line-height: 8mm;
-  margin-top: 2mm;
+#rightpart #intro .content {
+  margin-top: 3mm;
+  font-size: 0.9em;
+  line-height: 6mm;
+}
+#rightpart #intro .content h1 {
+  font-size: 5mm;
+  color: #0F2540;
+  font-weight: 700;
+  height: 9mm;
+  line-height: 9mm;
+}
+#rightpart #intro .content h1 span {
+  font-weight: 700;
+}
+#rightpart #intro .content span {
+  font-family: DINPro;
+}
+#rightpart #intro .content li {
+  list-style: disc;
+  list-style-position: inside;
 }
 #rightpart #experience {
+  position: relative;
   padding: 10mm 10%;
-  height: 170.08mm;
+  height: 189.58mm;
 }
 #rightpart #experience header span {
   width: 93mm;
 }
-#rightpart #experience ul li {
-  float: left;
-  margin-top: 8mm;
-  width: 46%;
+#rightpart #experience ul .code {
+  font-weight: 600;
+  text-align: center;
+  bottom: 6mm;
+  position: absolute;
+  opacity: 0.6;
+  color: #0F2540;
+  font-size: 0.9em;
+  left: 22mm;
+  width: 93mm;
+  line-height: 6mm;
 }
-#rightpart #experience ul li img {
+#rightpart #experience ul span {
+  font-family: DINPro;
+}
+#rightpart #experience ul li {
+  margin-top: 3mm;
   width: 100%;
 }
-#rightpart #experience ul li div {
-  height: 12mm;
-  line-height: 12mm;
-  font-weight: bold;
+#rightpart #experience ul li h1 {
+  font-size: 5mm;
+  color: #0F2540;
+  font-weight: 700;
+  height: 9mm;
+  line-height: 9mm;
 }
-#rightpart #experience ul li:nth-child(2n+1) {
-  margin-right: 4mm;
+#rightpart #experience ul li h1 span {
+  font-weight: 700;
 }
-#rightpart #experience ul li:nth-child(2n) {
-  margin-left: 4mm;
+#rightpart #experience ul li .tags span {
+  color: #ffffff;
+  background-color: #005CAF;
+  display: inline-block;
+  padding: 0mm 2mm;
+  font-size: 4mm;
+  font-weight: 700;
+  height: 7mm;
+  line-height: 7mm;
+  border-radius: 1.75mm;
+  margin: 0 0 1.5mm 0;
 }
