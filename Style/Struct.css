@@ -113,7 +113,7 @@ header span {
   top: 6.9mm;
   left: 21.075mm;
   margin: 0 auto;
-  background-image: url('../Img/lump.png');
+  background-image: url('../Img/lump.jpeg');
   background-size: 100% 100%;
   border-radius: 50%;
   border: 1.5mm solid #193d69;
@@ -169,19 +169,19 @@ header span {
   text-align: center;
 }
 #leftpart #skills ul li:first-child .progress-room div {
-  width: 70%;
+  width: 60%;
 }
 #leftpart #skills ul li:nth-child(2) .progress-room div {
-  width: 60%;
+  width: 70%;
 }
 #leftpart #skills ul li:nth-child(3) .progress-room div {
-  width: 60%;
-}
-#leftpart #skills ul li:nth-child(4) .progress-room div {
   width: 50%;
 }
+#leftpart #skills ul li:nth-child(4) .progress-room div {
+  width: 65%;
+}
 #leftpart #skills ul li:nth-child(5) .progress-room div {
-  width: 40%;
+  width: 45%;
 }
 #leftpart #skills ul .progress-room {
   width: 51mm;
@@ -208,14 +208,14 @@ header span {
   height: 100%;
 }
 #rightpart #intro {
-  padding: 10mm 10%;
-  height: 106.92mm;
+  padding: 5mm 10% 0 10%;
+  height: 81.92mm;
 }
 #rightpart #intro header span {
   width: 93mm;
 }
 #rightpart #intro .content {
-  margin-top: 3mm;
+  margin-top: 2mm;
   font-size: 0.9em;
   line-height: 6mm;
 }
@@ -236,10 +236,42 @@ header span {
   list-style: disc;
   list-style-position: inside;
 }
+#rightpart #internship {
+  padding: 0 10%;
+  height: 45mm;
+}
+#rightpart #internship header span {
+  width: 93mm;
+}
+#rightpart #internship header div {
+  margin-top: 0;
+}
+#rightpart #internship div {
+  margin-top: 2mm;
+}
+#rightpart #internship div p {
+  line-height: 8mm;
+  height: 8mm;
+  font-weight: 700;
+  float: left;
+}
+#rightpart #internship div p span {
+  color: #005CAF;
+  font-weight: 700;
+}
+#rightpart #internship div div {
+  line-height: 8mm;
+  height: 8mm;
+  margin: 0 0 0 2mm;
+  float: left;
+}
+#rightpart #internship div div span {
+  font-weight: 700;
+}
 #rightpart #experience {
   position: relative;
-  padding: 10mm 10%;
-  height: 189.58mm;
+  padding: 0 10%;
+  height: 169.58mm;
 }
 #rightpart #experience header span {
   width: 93mm;
