@@ -172,16 +172,16 @@ header span {
   width: 60%;
 }
 #leftpart #skills ul li:nth-child(2) .progress-room div {
-  width: 70%;
+  width: 60%;
 }
 #leftpart #skills ul li:nth-child(3) .progress-room div {
-  width: 50%;
+  width: 60%;
 }
 #leftpart #skills ul li:nth-child(4) .progress-room div {
-  width: 65%;
+  width: 70%;
 }
 #leftpart #skills ul li:nth-child(5) .progress-room div {
-  width: 45%;
+  width: 40%;
 }
 #leftpart #skills ul .progress-room {
   width: 51mm;
@@ -208,14 +208,14 @@ header span {
   height: 100%;
 }
 #rightpart #intro {
-  padding: 5mm 10% 0 10%;
-  height: 81.92mm;
+  padding: 5mm 10%;
+  height: 80.5mm;
 }
 #rightpart #intro header span {
   width: 93mm;
 }
 #rightpart #intro .content {
-  margin-top: 2mm;
+  margin-top: 3mm;
   font-size: 0.9em;
   line-height: 6mm;
 }
@@ -237,41 +237,39 @@ header span {
   list-style-position: inside;
 }
 #rightpart #internship {
-  padding: 0 10%;
-  height: 45mm;
+  padding: 5mm 10%;
+  height: 70mm;
 }
 #rightpart #internship header span {
   width: 93mm;
 }
-#rightpart #internship header div {
-  margin-top: 0;
-}
-#rightpart #internship div {
+#rightpart #internship .content {
   margin-top: 2mm;
 }
-#rightpart #internship div p {
-  line-height: 8mm;
-  height: 8mm;
+#rightpart #internship .content p {
+  height: 6mm;
+  line-height: 6mm;
   font-weight: 700;
   float: left;
 }
-#rightpart #internship div p span {
+#rightpart #internship .content p span {
   color: #005CAF;
-  font-weight: 700;
 }
-#rightpart #internship div div {
-  line-height: 8mm;
-  height: 8mm;
-  margin: 0 0 0 2mm;
+#rightpart #internship .content p span:nth-child(2) {
+  margin-right: 2mm;
+}
+#rightpart #internship .content div {
+  height: 6mm;
+  line-height: 6mm;
   float: left;
 }
-#rightpart #internship div div span {
+#rightpart #internship .content div span {
   font-weight: 700;
 }
 #rightpart #experience {
   position: relative;
-  padding: 0 10%;
-  height: 169.58mm;
+  padding: 5mm 10%;
+  height: 216mm -70mm;
 }
 #rightpart #experience header span {
   width: 93mm;

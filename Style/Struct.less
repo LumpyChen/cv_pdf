@@ -16,8 +16,9 @@
 @leftSecondHeight:89.1mm;
 @leftThirdHeight:@pageHeight - @leftFirstHeight - @leftSecondHeight;
 
-@rightFirstHeight:106.92mm;
-@rightSecondHeight: @pageHeight - @rightFirstHeight;
+@rightFirstHeight:80.5mm;
+@rightSecondHeight:70.00mm;
+@rightThirdHeight: @pageHeight - @rightFirstHeight -@rightSecondHeight;
 
 @circleRadius:4.5mm;
 
@@ -147,7 +148,7 @@ header {
       top: @pageWidth*0.04-1.5mm;
       left: @pageWidth*0.1075-1.5mm;
       margin: 0 auto;
-      background-image: url('../Img/lump.png');
+      background-image: url('../Img/lump.jpeg');
       background-size: 100% 100%;
       border-radius: 50%;
       border: 1.5mm solid lighten(@ruri,10%);
@@ -207,7 +208,7 @@ header {
         }
 
         &:first-child .progress-room div{
-          width: 70%;
+          width: 60%;
         }
         &:nth-child(2) .progress-room div{
           width: 60%;
@@ -216,7 +217,7 @@ header {
           width: 60%;
         }
         &:nth-child(4) .progress-room div{
-          width: 50%;
+          width: 70%;
         }
         &:nth-child(5) .progress-room div{
           width: 40%;
@@ -251,7 +252,7 @@ header {
 #rightpart{
   .part(right,@rightPartWidth);
   #intro{
-    padding: 10mm 10%;
+    padding: 5mm 10%;
     height: @rightFirstHeight;
     header{
       span{
@@ -274,10 +275,42 @@ header {
       }
     }
   }
+  #internship {
+    padding: 5mm 10%;
+    height: @rightSecondHeight;
+    header{
+      span{
+        width: @spanWidth2
+      }
+    }
+    .content {
+      margin-top: 2mm;
+      p {
+        height: 6mm;
+        line-height: 6mm;
+        font-weight: 700;
+        float: left;
+        span {
+          color: @sky;
+        }
+        & span:nth-child(2) {
+          margin-right: 2mm;
+        }
+      }
+      div {
+        height: 6mm;
+        line-height: 6mm;
+        float: left;
+        span {
+          font-weight: 700;
+        }
+      }
+    }
+  }
   #experience{
     position: relative;
-    padding: 10mm 10%;
-    height: @rightSecondHeight;
+    padding: 5mm 10%;
+    height: @rightThirdHeight;
     header{
       span{
         width: @spanWidth2;
