@@ -13,8 +13,9 @@
 //width,sum = left + right = 1
 
 @leftFirstHeight:74.25mm;
-@leftSecondHeight:89.1mm;
-@leftThirdHeight:@pageHeight - @leftFirstHeight - @leftSecondHeight;
+@leftSecondHeight:73.1mm;
+@leftThirdHeight:120mm;
+@LeftFourthHeight:@pageHeight - @leftFirstHeight - @leftSecondHeight - @leftThirdHeight;
 
 @rightFirstHeight:80.5mm;
 @rightSecondHeight:70.00mm;
@@ -242,6 +243,32 @@ header {
           float: right;
         }
 
+      }
+    }
+  }
+  #qrcode {
+    height: @LeftFourthHeight;
+    padding: 0 10%;
+    .code-img {
+      background-image: url('../Img/exported_qrcode_image.png');
+      height: 5.5rem;
+      width: 5.5rem;
+      background-size: 100%;
+      border: 1.5mm solid #fff;
+      float: left;
+    }
+    .code-desc {
+      color: #fff;
+      float: left;
+      width: 27mm;
+      margin-left: 7mm;
+      line-height: 5.1mm;
+      font-size: 3.7mm;
+      a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 3.7mm;
+        word-wrap: break-word;
       }
     }
   }
